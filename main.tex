@@ -1,0 +1,47 @@
+\documentclass[11pt,dutch]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\definecolor{Grey1}{HTML}{343434}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\graphicspath{ {./IMG/} }
+
+
+
+\begin{document}
+\include{main/front}
+\maketitle
+\include{main/inhouds}
+\include{chapters/01_Achtergrond.tex}
+\include{chapters/02_De_projectopdracht.tex}
+\include{chapters/03_Projectactiviteiten.tex}
+\include{chapters/04_Projectgrenzen.tex}
+\include{chapters/05_De_producten.tex}
+\include{chapters/06_Kwaliteit.tex}
+\include{chapters/07_De_projectorganisatie.tex}
+\include{chapters/08_Planning.tex}
+\include{chapters/09_Kosten_en_Opbrengsten.tex}
+\include{chapters/10_Risicos.tex}
+\include{chapters/11_Verdeling}
+
+\end{document}
